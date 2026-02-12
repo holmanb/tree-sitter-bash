@@ -5840,6 +5840,10 @@
                 },
                 "named": true,
                 "value": "regex"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "_special_character"
               }
             ]
           }

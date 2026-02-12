@@ -957,6 +957,7 @@ module.exports = grammar({
         $.string,
         $.raw_string,
         alias(/\s+/, $.regex),
+        $._special_character,
       )),
     ),
 
