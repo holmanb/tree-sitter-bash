@@ -34,6 +34,7 @@ The primary development environment is Node.js.
 
   ```bash
   npm test
+  tree-sitter test
   ```
 
 * **Lint the grammar:**
@@ -46,18 +47,18 @@ The primary development environment is Node.js.
   parser from `grammar.js`.
 
   ```bash
-  npx tree-sitter generate
+  tree-sitter generate
   ```
 
 * **Run the playground:** To interactively parse and inspect the syntax tree of
   Bash code.
   ```bash
-  npx tree-sitter playground
+  tree-sitter playground
   ```
 
 * **Parse a script:** To parse and inspect the syntax tree of Bash code.
   ```bash
-  npx tree-sitter parse <some_script.sh>
+  tree-sitter parse <some_script.sh>
   ```
 
 ## Development Conventions
