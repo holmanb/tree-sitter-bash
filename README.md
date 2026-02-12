@@ -42,4 +42,3 @@ npm run test:watch
 [npm]: https://img.shields.io/npm/v/tree-sitter-bash?logo=npm
 [crates]: https://img.shields.io/crates/v/tree-sitter-bash?logo=rust
 [pypi]: https://img.shields.io/pypi/v/tree-sitter-bash?logo=pypi&logoColor=ffd242
-
