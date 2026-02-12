@@ -2005,9 +2005,6 @@ Some of the special built-ins are described as conforming to XBD 12.2 Utility Sy
 
 
 ##  
-UNIX® is a registered Trademark of The Open Group.
-POSIX™ is a Trademark of The IEEE.
-Copyright © 2001-2024 The IEEE and The Open Group, All Rights Reserved
 
 ## NAME
 
