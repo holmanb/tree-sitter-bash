@@ -1,0 +1,31 @@
+get_single_line_flow_sequence() {
+    # get_single_line_flow_sequence(key, value)
+    # for a key / value pair, check that the value contains a single
+    # line flow sequence[1] with a value
+    #
+    # return 0 if a single line flow sequence is found, otherwise 1
+    # does not modify _RET
+    #
+    # [1] https://yaml.org/spec/1.2.2/#741-flow-sequences
+    local ret="" tmp=""
+    get_value "$1" "$2" || return 1
+    ret="$_RET"
+    tmp="$_RET"
+
+    # remove smallest ] suffix
+    tmp="${tmp%]}"
+
+    # remove smallest [ prefix
+    tmp="${tmp#[}"
+
+    # remove preceding and trailing whitespace
+    trim "$tmp"
+    _RET="$ret"
+
+    # check value length
+    if [ "${#_RET}" -ne 0 ]; then
+        return 0
+    fi
+    debug 1 "key $key didn't have a valid single line flow sequence"
+    return 1
+}
